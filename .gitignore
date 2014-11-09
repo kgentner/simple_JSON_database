@@ -31,5 +31,5 @@ npm-debug.log
 #Mac OS X
 .DS_Store
 
-#Simple JSON database directory
+#Database
 /data
