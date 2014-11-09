@@ -23,7 +23,7 @@ app.post('/:username', function(req, res) {
     if (err) { throw err; }
     console.log('A new user has been saved!');
   });
-  res.send('It\'s saved!');
+  res.json({msg: 'New User Saved!'});
 });
 
 app.listen(app.get('port'), function() {

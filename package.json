@@ -2,12 +2,12 @@
   "name": "simple_JSON_database",
   "version": "1.0.0",
   "description": "simple_JSON_database ====================",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/grunt-cli/bin/grunt"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,6 @@
     "mocha": "^2.0.1"
   },
   "dependencies": {
-    "body-parser": "^1.9.2",
     "express": "^4.10.1"
   }
 }
