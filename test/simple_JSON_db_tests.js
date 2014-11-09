@@ -7,11 +7,20 @@ chai.use(chaihttp);
 require('../server');
 
 var expect = chai.expect;
+var mkdirp = require('mkdirp');
+
+mkdirp('/data', function(err) {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log('success!');
+  }
+});
 
 describe('simple JSON Database', function() {
   it('should be able to write json', function(done) {
     chai.request('http://localhost:8080')
-    .post('/')
+    .post('/test')
     .end(function(err, res) {
       expect(err).to.eql(null);
       expect(res).to.be.json;
