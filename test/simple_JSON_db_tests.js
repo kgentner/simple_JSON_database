@@ -7,15 +7,6 @@ chai.use(chaihttp);
 require('../server');
 
 var expect = chai.expect;
-var mkdirp = require('mkdirp');
-
-mkdirp('/data', function(err) {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log('success!');
-  }
-});
 
 describe('simple JSON Database', function() {
   it('should be able to write json', function(done) {
