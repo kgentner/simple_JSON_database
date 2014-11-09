@@ -21,7 +21,6 @@ app.post('/:username', function(req, res) {
 
   fs.writeFile(filepath, data, function(err) {
     if (err) { throw err; }
-    console.log('A new user has been saved!');
   });
   res.json({msg: 'New User Saved!'});
 });

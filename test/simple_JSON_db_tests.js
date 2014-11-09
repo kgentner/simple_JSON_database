@@ -8,7 +8,7 @@ require('../server');
 
 var expect = chai.expect;
 
-describe('basic notes crud', function() {
+describe('simple JSON Database Create and Read', function() {
   it('should be able to create a new user', function(done) {
     chai.request('http://localhost:8080')
     .post('/karl')
