@@ -11,7 +11,7 @@ var expect = chai.expect;
 describe('simple JSON Database', function() {
   it('should be able to write json', function(done) {
     chai.request('http://localhost:8080')
-    .post('/test')
+    .post('/')
     .end(function(err, res) {
       expect(err).to.eql(null);
       expect(res).to.be.json;
